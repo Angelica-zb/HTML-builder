@@ -28,4 +28,4 @@ stdin.on('data', function(data) {
 });
 
 process.on('SIGINT', () => process.exit());
-process.on('exit', () => stdout.write('Удачи в обучении!'));
+process.on('exit', () => stdout.write('\nУдачи в обучении!'));
