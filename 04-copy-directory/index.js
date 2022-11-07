@@ -7,6 +7,9 @@ copy(fileWay, copyWay)
 
 function copy(fileWay, copyWay) {
     fs.rm(copyWay, { recursive: true, force: true }, (err) => {
+        if (err) {
+            console.log(err);
+        }
         fs.mkdir(copyWay, { recursive: true }, (err) => {
             if (err) {
                 console.log(err);
